@@ -9,7 +9,7 @@ body {
     justify-content: space-between;
     position: relative;
     left: -180px;
-    transition: left 200ms ease-in-out, right 200ms ease-in-out;
+    transition: left 200ms ease-in-out;
 }
 
 .content {

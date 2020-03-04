@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.container  {
+    display: flex;
+    width: calc(100vw + 400px - 40px);
+    justify-content: space-between;
+    position: relative;
+    left: -180px;
+    transition: left 200ms ease-in-out, right 200ms ease-in-out;
+}
+
+.content {
+    flex-grow: 2;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-content {
+    background-color: gray;
+    width: calc(100vw - 80px);
+    height: calc(100vh - 40px);
+}
+
+.side-panel {
+    height: 100vh;
+    background-color: orange;
+    width: 200px;
+    z-index: 2;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, .5);
+    transition: background-color 200ms ease-in-out;
+}
+
+.side-panel:hover {
+    background-color: #ffbe00;
+    cursor: pointer;
+}
